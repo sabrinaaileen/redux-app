@@ -1,17 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Weather from "./Weather";
-import Date from "./Date";
+import CurrentDate from "./CurrentDate";
 import Thoughts from "./Thoughts";
 import Photos from "./Photos";
 import Quote from "./Quote";
 import "./App.css";
 
-function App() {
+function App(props) {
   return (
     <div className="App">
       <header className="App-header">
         <section className="date">
-          <Date />
+          <CurrentDate />
         </section>
         <h1>Life is too short not to be inspirational</h1>
       </header>
