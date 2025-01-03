@@ -17,7 +17,7 @@ function App(props) {
       </header>
       <main>
         <section className="weather">
-          <Weather />
+          <Weather defaultCity="Munich" />
         </section>
         <section className="thoughts">
           <Thoughts />
