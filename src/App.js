@@ -27,6 +27,7 @@ function App(props) {
         </section>
         <section className="quote">
           <Quote />
+          <Photos />
         </section>
       </main>
       <footer>
