@@ -40,7 +40,7 @@ export default function SecondQuote() {
 
   return (
     <div>
-      <h1>Your Quote</h1>
+      <h1>Second Quote</h1>
       <p>"{quote.text}"</p>
       <p>- {quote.author}</p>
     </div>
