@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./CSS/Photos.css";
 
 export default function Photos() {
   const [photo, setPhoto] = useState(null);
@@ -37,9 +38,9 @@ export default function Photos() {
   }
 
   return (
-    <div>
-      <p>The photos will be displayed here</p>
-      <img className="Photo" alt="random photo" src={photo.urls.regular} />
+    <div className="photo-container">
+      <p className="photo-paragraph">Your photo of the day 🐸</p>
+      <img className="photo" alt="random" src={photo.urls.regular} />
     </div>
   );
 }

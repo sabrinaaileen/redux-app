@@ -4,15 +4,15 @@ import CurrentDate from "./CurrentDate";
 import Thoughts from "./Thoughts";
 import Photos from "./Photos";
 import Quote from "./Quote";
-import "./App.css";
+import "./CSS/App.css";
 
-function App(props) {
+function App() {
   return (
     <div className="App">
+      <section className="date">
+        <CurrentDate />
+      </section>
       <header className="App-header">
-        <section className="date">
-          <CurrentDate />
-        </section>
         <h1>Life is too short not to be inspirational</h1>
       </header>
       <main>
@@ -27,7 +27,6 @@ function App(props) {
         </section>
         <section className="quote">
           <Quote />
-          <Photos />
         </section>
       </main>
       <footer>

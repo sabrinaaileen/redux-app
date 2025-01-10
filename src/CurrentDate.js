@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./CSS/CurrentDate.css";
 
 export default function CurrentDate() {
   const [date, setDate] = useState(new Date());
@@ -59,14 +60,14 @@ export default function CurrentDate() {
     currentDay = `${currentDay}th`;
   }
   let year = date.getFullYear();
-  let actualDate = `Today, it's ${day} the ${currentDay} of ${month} ${year}`;
+  let actualDate = `Welcome! It's ${day}, ${month} ${currentDay}, ${year}.`;
   let actualTime = `The current time is ${hours}:${minutes}:${seconds}`;
 
   return (
     <div>
-      <p>The date will be displayed here</p>
-      <p>{actualDate}</p>
-      <p>{actualTime}</p>
+      <p className="current-date">
+        {actualDate} {actualTime}
+      </p>
     </div>
   );
 }

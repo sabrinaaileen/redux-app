@@ -3,6 +3,8 @@ import axios from "axios";
 
 import WeatherData from "./WeatherData";
 
+import "./CSS/Weather.css";
+
 export default function Weather(props) {
   const [info, setInfo] = useState({});
   const [ready, setReady] = useState(false);
@@ -46,13 +48,13 @@ export default function Weather(props) {
   if (ready) {
     return (
       <div>
-        <h2>What to expect from the heaven</h2>
+        <h2 className="weather-header">What to expect from the heaven</h2>
         <form onSubmit={handleSubmit}>
-          <div className="weatherGrid">
-            <div className="weatherGridColumn">
+          <div>
+            <div>
               <WeatherData data={info} />
             </div>
-            <div className="weatherGridColumn">
+            <div>
               <input
                 type="button"
                 value="See if it rains outside your house"

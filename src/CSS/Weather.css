@@ -1,0 +1,30 @@
+.weather-header {
+  font-size: 25px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.weather-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px auto;
+}
+.weather-grid-column-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-grid-column h2 {
+  font-size: 38px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.weather-grid-column h6 {
+  font-size: 25px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.weather-grid-column-2 span {
+  font-size: 35px;
+}
