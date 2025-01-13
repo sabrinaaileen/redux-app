@@ -23,7 +23,9 @@ export default function SecondQuote() {
         });
       } catch (error) {
         console.error("Error fetching quote: ", error);
-        setError("Failed to fetch the quote. Please try again.");
+        setError(
+          "Failed to fetch the quote. Please try again. Update: The API is currently not working."
+        );
       } finally {
         setLoading(false);
       }

@@ -29,6 +29,8 @@ export default function Weather(props) {
       country: response.data.country,
       temperature: response.data.temperature.current,
       coordinates: response.data.coordinates,
+      icon: response.data.condition.icon_url,
+      description: response.data.condition.description,
     });
     setReady(true);
   }
@@ -47,7 +49,7 @@ export default function Weather(props) {
   }
   if (ready) {
     return (
-      <div>
+      <div className="Weather">
         <h2 className="weather-header">What to expect from the heaven</h2>
         <form onSubmit={handleSubmit}>
           <div>
@@ -57,21 +59,21 @@ export default function Weather(props) {
             <div>
               <input
                 type="button"
-                value="See if it rains outside your house"
-                className="buttonCurrent"
+                value="Your location"
+                className="button-current"
                 title="Get the weather for your current location!"
                 onClick={getGeolocation}
               />
               <input
                 type="submit"
-                value="Or whatever..."
-                className="buttonSearch"
+                value="Search another city"
+                className="button-search"
                 title="Get the weather for whatever..."
               />
               <input
                 type="text"
-                placeholder="You know what you are searching for.."
-                className="searchField"
+                placeholder="Type in city..."
+                className="search-field"
                 onChange={changeCity}
               />
             </div>

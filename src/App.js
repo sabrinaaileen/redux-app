@@ -30,17 +30,36 @@ function App() {
         </section>
       </main>
       <footer>
-        <p>This will be the Footer</p>
         <div className="grid">
           <div className="grid-column">
             <h3>About this project</h3>
             <p>This is my first React project with Redux.</p>
+            <p>
+              Visit my{" "}
+              <a
+                href="https://www.sabrina-aileen-hodapp.de"
+                target="_blank"
+                rel="noreferrer"
+                className="footer-link"
+              >
+                Website
+              </a>
+            </p>
           </div>
           <div className="grid-column">
             <h3>Let's get in contact</h3>
             <p>
               Feel free to write me in any way you want to. I'm looking forward
               to get in contact with you. Let's build great things together!
+              This website is open-sourced on{" "}
+              <a
+                href="https://github.com/sabrinaaileen/redux-app"
+                target="_blank"
+                rel="noreferrer"
+                className="footer-link"
+              >
+                Github
+              </a>
             </p>
           </div>
         </div>

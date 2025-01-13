@@ -1,3 +1,6 @@
+.Weather {
+  padding-bottom: 20px;
+}
 .weather-header {
   font-size: 25px;
   color: #fff;
@@ -6,25 +9,81 @@
 
 .weather-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   margin: 20px auto;
+  padding: 20px 10px;
+  text-align: center;
 }
-.weather-grid-column-2 {
+
+.weather-grid-column-1 h2 {
+  font-size: 38px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 0;
+}
+.weather-grid-column-1 h6 {
+  font-size: 25px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.weather-grid-column-3 span {
+  font-size: 35px;
+}
+
+.weather-grid-column-1 {
+  padding-top: 20px;
+}
+
+.weather-grid-column-3 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.weather-grid-column h2 {
-  font-size: 38px;
-  margin-top: 10px;
-  margin-bottom: 5px;
+.button-current {
+  padding: 10px 15px;
+  border: 1px solid rgba(20, 120, 45, 0.3);
+  background-color: rgba(7, 106, 0, 0.5);
+  color: #fff;
+  margin: 0px 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px rgba(20, 120, 45, 0.3);
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
 }
-.weather-grid-column h6 {
-  font-size: 25px;
-  margin-top: 0;
-  margin-bottom: 0;
+.button-current:hover {
+  border: 1px solid rgba(7, 106, 0, 0.5);
+  background-color: rgba(20, 120, 45, 0.3);
 }
-.weather-grid-column-2 span {
-  font-size: 35px;
+.button-search {
+  padding: 10px 15px;
+  border: 1px solid rgba(20, 120, 45, 0.3);
+  background-color: rgba(7, 106, 0, 0.5);
+  color: #fff;
+  margin: 0px 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px rgba(20, 120, 45, 0.3);
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+.button-search:hover {
+  border: 1px solid rgba(7, 106, 0, 0.5);
+  background-color: rgba(20, 120, 45, 0.3);
+}
+.search-field {
+  padding: 10px 15px;
+  border: 1px solid rgba(7, 106, 0, 0.5);
+  background-color: rgba(20, 120, 45, 0.3);
+  margin: 0px 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px rgba(20, 120, 45, 0.3);
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+::placeholder {
+  color: #fff;
+}
+.search-field:hover {
+  border: 1px solid rgba(20, 120, 45, 0.3);
+  background-color: rgba(7, 106, 0, 0.5);
 }
