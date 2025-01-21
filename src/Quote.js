@@ -43,7 +43,7 @@ export default function SecondQuote() {
 
   return (
     <div>
-      <h1>Your Quote</h1>
+      <h1 className="quote-heading">Your Quote</h1>
       <p className="quote-paragraph">"{quote.text}"</p>
       <p className="quote-author">- {quote.author}</p>
     </div>
