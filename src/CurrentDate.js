@@ -56,6 +56,14 @@ export default function CurrentDate() {
     currentDay = `${currentDay}nd`;
   } else if (currentDay === 3) {
     currentDay = `${currentDay}rd`;
+  } else if (currentDay === 21) {
+    currentDay = `${currentDay}st`;
+  } else if (currentDay === 22) {
+    currentDay = `${currentDay}nd`;
+  } else if (currentDay === 23) {
+    currentDay = `${currentDay}rd`;
+  } else if (currentDay === 31) {
+    currentDay = `${currentDay}st`;
   } else {
     currentDay = `${currentDay}th`;
   }
