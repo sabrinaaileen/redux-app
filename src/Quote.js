@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./CSS/Quote.css";
 
 export default function SecondQuote() {
   const [quote, setQuote] = useState({ text: "", author: "" });
@@ -43,8 +44,8 @@ export default function SecondQuote() {
   return (
     <div>
       <h1>Your Quote</h1>
-      <p>"{quote.text}"</p>
-      <p>- {quote.author}</p>
+      <p className="quote-paragraph">"{quote.text}"</p>
+      <p className="quote-author">- {quote.author}</p>
     </div>
   );
 }

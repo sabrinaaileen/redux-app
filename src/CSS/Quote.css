@@ -1,0 +1,14 @@
+h1 {
+  font-size: 40px;
+  color: #fff;
+}
+
+.quote-paragraph {
+  font-style: italic;
+  color: #fb9d9d;
+}
+
+.quote-author {
+  font-weight: bold;
+  color: #5f1515;
+}
