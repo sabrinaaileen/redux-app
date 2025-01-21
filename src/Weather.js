@@ -50,7 +50,7 @@ export default function Weather(props) {
   if (ready) {
     return (
       <div className="Weather">
-        <h2 className="weather-header">What to expect from the heaven</h2>
+        <h2 className="weather-header">What to expect from above</h2>
         <form onSubmit={handleSubmit}>
           <div>
             <div>

@@ -35,7 +35,7 @@ function App() {
             <h3>About this project</h3>
             <p>This is my first React project with Redux.</p>
             <p>
-              Visit my{" "}
+              Please visit my{" "}
               <a
                 href="https://www.sabrina-aileen-hodapp.de"
                 target="_blank"
@@ -43,7 +43,8 @@ function App() {
                 className="footer-link"
               >
                 Website
-              </a>
+              </a>{" "}
+              to see more of my projects!
             </p>
           </div>
           <div className="grid-column">
@@ -60,6 +61,25 @@ function App() {
               >
                 Github
               </a>
+              . Write me on{" "}
+              <a
+                href="https://www.instagram.com/sabrina_aileen_hodapp/"
+                target="_blank"
+                rel="noreferrer"
+                className="footer-link"
+              >
+                Instagram
+              </a>{" "}
+              or send me an{" "}
+              <a
+                href="mailto:hodapp.sabrina@live.de"
+                target="_blank"
+                rel="noreferrer"
+                className="footer-link"
+              >
+                email
+              </a>
+              .
             </p>
           </div>
         </div>
