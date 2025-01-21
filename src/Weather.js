@@ -56,7 +56,7 @@ export default function Weather(props) {
             <div>
               <WeatherData data={info} />
             </div>
-            <div>
+            <div className="weather-button-grid">
               <input
                 type="button"
                 value="Your location"

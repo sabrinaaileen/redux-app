@@ -87,3 +87,16 @@
   border: 1px solid rgba(20, 120, 45, 0.3);
   background-color: rgba(7, 106, 0, 0.5);
 }
+
+@media (max-width: 1000px) {
+  .weather-grid {
+    grid-template-columns: 1fr;
+  }
+  .weather-button-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .weather-button-grid input {
+    margin-bottom: 15px;
+  }
+}

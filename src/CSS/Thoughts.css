@@ -86,3 +86,14 @@
   background-color: #4559db;
   color: #fff;
 }
+
+@media (max-width: 1000px) {
+  form {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .thoughts-input-submit {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}

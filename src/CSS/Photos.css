@@ -10,3 +10,9 @@
   color: #ffffff;
   font-weight: bold;
 }
+
+@media (max-width: 1000px) {
+  .photo {
+    width: 200px;
+  }
+}
