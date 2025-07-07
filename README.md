@@ -1,4 +1,82 @@
-# Getting Started with Create React App and Redux
+# Inspirational Homepage with React and Redux
+
+This is a personal homepage project built with **React** and **Redux Toolkit**. It provides a motivational and functional start to the day, displaying weather data, a background image, an inspirational quote, the current time, and a place to track your thoughts.
+
+## 🚀 Features
+
+- 🗓️ Live date and time
+- 🌤️ Weather based on default or user location
+- 🧠 Thoughts (daily notes)
+- 🖼️ Photo of the day
+- 💬 Quote of the day
+
+---
+
+### 🗓️ Current Date & Time
+
+Displays the current date and time, updating every second using `setInterval`.
+
+---
+
+### 🌤️ Weather
+
+Shows the current weather based on a default city (`Munich`) or the user’s actual location.
+
+- Includes: City name, country, temperature, description, and weather icon
+- Location detection via browser geolocation
+- Custom city search functionality
+- Weather data provided by **SheCodes Weather API** (for educational use)
+
+> **Troubleshooting**: If location detection does not work, please check your browser’s location permissions.
+
+---
+
+### 🧠 Thoughts
+
+A simple and intuitive thought-tracking feature powered by **React** and **Redux Toolkit**. Users can jot down short thoughts, mark them as done, or remove them.
+
+#### ✨ Features
+
+- Add new thoughts via input
+- Toggle "done" status (with line-through effect)
+- Delete thoughts
+- Global state management via `createSlice`
+
+#### ⚙️ Technical Details
+
+- **Hooks**: `useState`, `useEffect`, `useSelector`, `useDispatch`
+- **Redux Logic**:
+  - `addThought`: Adds a new thought with a unique `id`
+  - `toggleThought`: Toggles completion status
+  - `removeThought`: Deletes a thought by `id`
+- Thought data structure: `{ id, text, done }`
+
+---
+
+### 🖼️ Photo of the Day
+
+Fetches and displays a random image using the **Unsplash API** to provide a visually inspiring background each day.
+
+---
+
+### 💬 Quote of the Day
+
+Displays a random motivational quote, including the author’s name. Powered by the **Go Quote API**.
+
+---
+
+## 📦 Tech Stack
+
+- React
+- Redux Toolkit
+- CSS Modules
+- SheCodes Weather API
+- Unsplash API
+- Go Quote API
+
+---
+
+## Getting Started with Create React App and Redux
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
